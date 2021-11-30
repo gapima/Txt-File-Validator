@@ -1,11 +1,12 @@
-import streamlit as st;
+import streamlit as st
 
 st.write("VALIDADOR DE TEXTO")
 
 with st.form(key="include_arquivo"):
-    input_name = st.selectbox("Selicione o Banco", ["Santander", "Itau", "Bradesco"])
-    input_name = st.selectbox("Selecione o produto", ["Cobrança", "Pagamento a forncedores", "Pagamento de salarios"])
-    input_name = st.selectbox("Selecione o layout", ["240", "400"])
+    input_banco = st.selectbox("Selicione o Banco", ["Santander", "Itau", "Bradesco"])
+    
+    input_produto = st.selectbox("Selecione o produto", ["Cobrança", "Pagamento a forncedores", "Pagamento de salarios"])
+    input_layout = st.selectbox("Selecione o layout", ["240", "400"])
     ##input_name = st.text_input(label="Insira o seu nome")
     ##input_age = st.number_input(label="insira sua idade")
     ##input_occupation = st.selectbox("Selicone o Banco", ["Santander", "Itau", "Bradesco"])
